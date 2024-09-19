@@ -8,7 +8,7 @@
       {"File" : "soil.gltf"},
       {"File" : "any_other_shapes.gltf"}
     ],
-  "Topology" : "file_that_map_organUID_to_scales.csv",
+  "Topology" : "file_that_map_organUID_and_file_name_to_scales.csv",
   "Lights" : "file_to_describe_the_lights. some what format",
   "Optical_Properties" : [
     {"File" : "file_whith_UID_to_RGBA.csv"},
