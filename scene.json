@@ -11,8 +11,8 @@
   "Topology" : "file_that_map_organUID_to_scales.csv",
   "Lights" : "file_to_describe_the_lights. some what format",
   "Optical_Properties" : [
-    {"File" : "file_whith_UID_to_RGBA.txt"},
-    {"File" : "file_whith_Scales_to_RGBA.txt"}
+    {"File" : "file_whith_UID_to_RGBA.csv"},
+    {"File" : "file_whith_Scales_to_RGBA.csv"}
   ]
 }
   
