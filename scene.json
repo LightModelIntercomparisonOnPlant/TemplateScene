@@ -38,6 +38,7 @@
    },
    "Illumination":{
       "sky":{
+         "North": "Y+ 0",
          "PAR":"clear_sky_Montpellier_21_06.csv"
       },
       "light":{
