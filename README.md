@@ -14,11 +14,11 @@ A project should contains :
    file scale_PPPP.csv will be associated to plant PPPP. The first column should list node ids containes in the corresponding plant gltf.
 5) Spectral_Band: A dict of band_name: [lambda_min, lambda_max] items defining spectral wavelengths associated to a band_name
 6) Spectral_Properties: A dict of two items: 
-	"materials": a dict of dict of  "Band_name": {"material_name": "spectral_property", ...}, } 
+	- "materials": a dict of dict of  "Band_name": {"material_name": "spectral_property", ...}, } 
 		defining spectral properties of materials of the scene. Spectral properties are of the form: "type p1 p2" or refer to a file (see example scene)
-	"mapping": a list of csv file that map the UID of the organs to a material_name.
+	- "mapping": a list of csv file that map the UID of the organs to a material_name.
 		 file spectral_PPPP.csv will be associated to plant PPPP. The first column should list node ids containes in the corresponding plant gltf.
 7) Illumination: A dict of two items:
-	"sky": a {"band_name": csv_file,...} dict specifying the luminance form the sky (infinite light source). The csv should have the form : theta phi luminance
-	"light" : a {"band_name": [csv_file,...], }dict of list of ies files specifying the lamps illumination (see https://techshelps.github.io/Acad_aug/WS73099cc142f48755f058a10f71c104f3-3b1a.htm). 
-	"measurements : a {"band_name": {"sensor_side": csv_file, ...},...} dict of dict indicating the files conting the measurment of the sensors in different band and for 'top' or 'bottom' sensor side.
+	- "sky": a {"band_name": csv_file,...} dict specifying the luminance form the sky (infinite light source). The csv should have the form : theta phi luminance
+	- "light" : a {"band_name": [csv_file,...], }dict of list of ies files specifying the lamps illumination (see https://techshelps.github.io/Acad_aug/WS73099cc142f48755f058a10f71c104f3-3b1a.htm). 
+8) "measurements : a {"band_name": {"sensor_side": csv_file, ...},...} dict of dict indicating the files conting the measurment of the sensors in different band and for 'top' or 'bottom' sensor side.
