@@ -1,19 +1,53 @@
 {
-  "Metainformation" : "some text to describe the model",
-  "Plants" : [ 
-      {"File" : "plant1.gltf"},
-      {"File" : "plant2.gltf"}
-    ],
-  "Environment" : [ 
-      {"File" : "soil.gltf"},
-      {"File" : "any_other_shapes.gltf"}
-    ],
-  "Topology" : "file_that_map_organUID_and_file_name_to_scales.csv",
-  "Lights" : "file_to_describe_the_lights. some what format",
-  "Optical_Properties" : [
-    {"File" : "plant1.csv"},
-    {"File" : "plant2.csv"}
-  ]
+   "Description":"some text to describe the model",
+   "Plant Architecture":[
+      "plant1.gltf",
+      "plant2.gltf"
+   ],
+   "Background":[
+      "soil.gltf"
+   ],
+   "Sensor":[
+      "sensors.gltf"
+   ],
+   "Scale":[
+      "scale_plant1.csv",
+      "scale_plant2.csv"
+   ],
+   "Spectral_Band":{
+      "PAR":[
+         400,
+         700
+      ]
+   },
+   "Spectral_Properties":{
+      "materials":{
+         "PAR":{
+            "soil":"Lambertian 0.2",
+            "leaf":"Lambertian 0.2 0.01",
+            "complex_leaf":{
+               "File":"complex_leaf_scatering_indicatrix_PAR.ies"
+            }
+         }
+      },
+      "mapping":[
+         "spectral_plant1.csv",
+         "spectral_plant2.csv",
+         "spectral_soil.csv"
+      ]
+   },
+   "Illumination":{
+      "sky":{
+         "PAR":"clear_sky_Montpellier_21_06.csv"
+      },
+      "light":{
+         "PAR":"some_artificial_light.ies"
+      }
+   },
+   "Measurements":{
+      "PAR":{
+         "top":"PAR_measurements.csv"
+      }
+   }
 }
-  
   
