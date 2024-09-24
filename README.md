@@ -16,7 +16,7 @@ A project should contains :
 6) Spectral_Properties: A dict of two items: 
 	- "materials": a dict of dict of  "Band_name": {"material_name": "spectral_property", ...}, } 
 		defining spectral properties of materials of the scene. Spectral properties are of the form: "type p1 p2", where type
-could be 'lambertian','phong' or refer to a bsdf file (https://optics.ansys.com/hc/en-us/articles/18384793374227-Speos-BRDF-BTDF-and-BSDF-Formats).For lambertian materials, type can be followed be reflectance only (opaque), reflectance and transmitance, or reflectance_top, transmitance_top, reflectance_bottom, transmitance_bottom for both sides of the reflector
+could be 'lambertian','phong' or refer to a brdf file (https://onlinelibrary.wiley.com/doi/full/10.1002/col.22790). For lambertian materials, type can be followed be reflectance only (opaque), reflectance and transmitance, or reflectance_top, transmitance_top, reflectance_bottom, transmitance_bottom for both sides of the reflector
 	- "mapping": a list of csv file that map the UID of the organs to a material_name.
 		 file spectral_PPPP.csv will be associated to plant PPPP. The first column should list node ids containes in the corresponding plant gltf.
 7) Illumination: A dict of two items:
