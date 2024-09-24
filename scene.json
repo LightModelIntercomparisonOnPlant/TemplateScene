@@ -26,7 +26,7 @@
             "soil":"Lambertian 0.2",
             "leaf":"Lambertian 0.2 0.01",
             "complex_leaf":{
-               "File":"complex_leaf_scatering_indicatrix_PAR.ies"
+               "File":"complex_leaf_scatering_indicatrix_PAR.bsdf"
             }
          }
       },
